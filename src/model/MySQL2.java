@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 
+//ecoElectrical for database connection
 
 public class MySQL2 {
 

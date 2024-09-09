@@ -14,28 +14,28 @@ public class AddressView extends javax.swing.JFrame {
     public AddressView(String email) {
         initComponents();
         
-        jLabel5.getText(email);
+//        jLabel5.getText(email);
         this.email = email;
 
     }
 
     private void loadAddress(){
     
-        try {
-            ResultSet resultset = MySQL2.executeSearch("SELECT * FROM `employee_address` INNER JOIN `city`"
-                    + "ON `employee_address`.`city_id` = `city`.`id`"
-                    + "WHERE `email` ='"+this.email+"' " );
-            
-            DefaultTableModel model = (DefaultTableModel) jTable3.
-            
-            
-            
-            
-            
-            
-        } catch (Exception e) {
-        }
-    
+//        try {
+//            ResultSet resultset = MySQL2.executeSearch("SELECT * FROM `employee_address` INNER JOIN `city`"
+//                    + "ON `employee_address`.`city_id` = `city`.`id`"
+//                    + "WHERE `email` ='"+this.email+"' " );
+//            
+//            DefaultTableModel model = (DefaultTableModel) jTable3.
+//            
+//            
+//            
+//            
+//            
+//            
+//        } catch (Exception e) {
+//        }
+//    
     
     }
     
@@ -106,7 +106,7 @@ public class AddressView extends javax.swing.JFrame {
 
             },
             new String [] {
-                "id", "email", "line1", "line2"
+                "id", "email", "line1", "line2", "City"
             }
         ));
         jScrollPane2.setViewportView(jTable3);
@@ -159,7 +159,6 @@ public class AddressView extends javax.swing.JFrame {
                             .addComponent(jLabel2)
                             .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(34, 34, 34)))
-                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
